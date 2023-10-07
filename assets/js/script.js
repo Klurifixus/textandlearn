@@ -1,20 +1,32 @@
-console.log("I like Pizza");
-console.log("Its really good")
+console canvas = document.getElementById("canvas");
+const crx = canvas.getContext("2d");
 
-window.alert("pizza is the shit")
+const CANVAS_WIDTH = canvas.width = 600;
+cost CANVAS_HEIGHT = canvas.height = 600;
+
+cost playerImage = new Image();
+playerImage.src = "./assets/images/assets/images/shadow_dog.png";
+const spriteWidth = 575;
+cost spriteHeight = 523;
+let frameX = 4;
+let frameY = 5;//byta frame
+let gameFrame = 0;
+cost staggerFrames = 5; //hastinghet
 
 
-//this is a comment
+function animate(){
+   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+   //ctx.fillRect(50,50,100,100);
+   //ctx.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh);
+   let position = Math.floor(gameFrame/staggeredFrames) % 6;
+   ctx.drawImage(playerImage, frameX * spriteWidth, frameY * spriteHeight, spritewidth, spriteHeight, 0, 0, spriteWidth, spriteHeight);
+   requestAnimationFrame(animate);
+   if (gameFrame % staggerFrames == 0){//hastighet
+   if (frameX < 6) frameX++;//antal frames 
+   else frameX = 0;
 
+    }
+   gameframe ++;
+};
+animated();
 
-let firstname = "kalle"; //strings
-let age = 21;           //numbers but when you add: age = age + 1 (blir det en string)
-let student = true;     //booleans
-
-age = age +1;
-
-console.log("Hello", firstname);
-console.log("You are", age, "years old!")
-console.log("Enrolled:", student);
-
-document.getElementById("p1").innerHTML = "Hello" + firstname;
