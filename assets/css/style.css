@@ -1,24 +1,18 @@
-#gameDiv{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border: 3px solid;
-    border-radius: 25%;
-    padding: 10px;
-    background-color: aqua;
-    text-align: center;
-}
 .choiceBtn{
     line-height: 30px;
     width: 150px;
-
-
-
 }
-
+#gameDiv{
+    font-family: 'Brush Script MT', cursive;
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: lightgrey;
+    text-align: center;
+}
 #playerText{
-    color:blue;
-
+    color: blue;
 }
 #computerText{
-    color: brown;
+    color: red;
 }
-
