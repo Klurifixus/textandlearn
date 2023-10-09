@@ -1,9 +1,24 @@
-#canvas1 {
-    border: 5px solid black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
+#gameDiv{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 3px solid;
+    border-radius: 25%;
+    padding: 10px;
+    background-color: aqua;
+    text-align: center;
 }
+.choiceBtn{
+    line-height: 30px;
+    width: 150px;
+
+
+
+}
+
+#playerText{
+    color:blue;
+
+}
+#computerText{
+    color: brown;
+}
+
